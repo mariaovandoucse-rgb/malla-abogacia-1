@@ -1,1 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e6f4ff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0066aa;
+    margin-bottom: 25px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.course {
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #004f7a;
+    transition: 0.3s;
+}
+
+/* Estado bloqueado */
+.locked {
+    background: #b5c7d1;
+    color: #ffffff;
+    cursor: not-allowed;
+    border-color: #8aa1ad;
+}
+
+/* Estado disponible */
+.available {
+    background: #cbe9ff;
+    color: #004f7a;
+}
+
+/* Estado aprobado */
+.completed {
+    background: #81d88e;
+    color: #ffffff;
+    border-color: #4c9c57;
+}
 
